@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>市场监测周度运行情况提示</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --ink: #1e293b;
+      --muted: #64748b;
+      --accent: #0f766e;
+      --accent-soft: #ccfbf1;
+      --danger: #b91c1c;
+      --danger-soft: #fee2e2;
+      --line: #dbe2ea;
+      --shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", sans-serif;
+      background: linear-gradient(180deg, #eef4f7 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    .hero, .section {
+      background: var(--card);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 24px;
+      background: linear-gradient(135deg, #0f766e, #155e75);
+      color: #fff;
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+    .hero p {
+      margin: 0;
+      line-height: 1.7;
+      opacity: 0.95;
+    }
+    .section {
+      margin-top: 18px;
+      padding: 20px;
+    }
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .card, .mini-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      background: #fcfdfd;
+    }
+    .card-label, .mini-title {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .card-value, .mini-value {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .card-sub {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .mini-status {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+    }
+    .ok {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .warn {
+      background: var(--danger-soft);
+      color: var(--danger);
+    }
+    .summary {
+      margin: 0;
+      line-height: 1.8;
+    }
+    .notice {
+      margin-top: 14px;
+      padding: 14px 16px;
+      background: #fff7ed;
+      border-radius: 14px;
+      color: #9a3412;
+    }
+    .notice ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    .push {
+      padding: 14px 16px;
+      background: #f8fafc;
+      border-radius: 14px;
+      white-space: pre-wrap;
+      line-height: 1.7;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 22px; }
+      .card-value, .mini-value { font-size: 24px; }
+      .section { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>市场监测周度运行情况提示</h1>
+      <p>统计周期：2026年6月8日至6月14日</p>
+    </section>
+
+    <section class="section">
+      <h2>一、总体情况</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-label">全市样本户建设</div>
+          <div class="card-value">310 户</div>
+          <div class="card-sub">目标 254 户，总体达标</div>
+        </div>
+        <div class="card">
+          <div class="card-label">本期应上报总户次</div>
+          <div class="card-value">2156</div>
+          <div class="card-sub">按日报汇总</div>
+        </div>
+        <div class="card">
+          <div class="card-label">异常总条数</div>
+          <div class="card-value">66</div>
+          <div class="card-sub">异常客户 31 户</div>
+        </div>
+        <div class="card">
+          <div class="card-label">异常条次率</div>
+          <div class="card-value">3.06%</div>
+          <div class="card-sub">下降0.21个百分点</div>
+        </div>
+      </div>
+      <p class="summary">本期统计周期为2026年6月8日至6月14日。截至6月14日，全市样本户实际310户，目标254户，大、中、小三个区间均达到目标要求，样本户建设总体稳定。本期全市应上报总户次2156户次，异常66条，异常条次率3.06%；较上期减少5条，下降0.21个百分点，整体异常水平有所回落。下一阶段重点关注两项工作：一是思明分公司小区间、集美分公司大区间的结构性缺口；二是28条B类非销购比异常的跟进整改。</p>
+    </section>
+
+    <section class="section">
+      <h2>二、样本户建设情况</h2>
+      <p class="summary">截至6月14日，全市样本户总体达标。大区间实际178户、目标152户；中区间实际71户、目标51户；小区间实际61户、目标51户，三个区间均达到目标要求。分公司层面仍需关注结构性缺口。思明分公司总量达标，但小区间差1户；集美分公司总量达标，但大区间差1户。湖里分公司、第一分公司各区间均达到目标要求。</p>
+      <div class="grid">
+        <div class="mini-card">
+          <div class="mini-title">大区间</div>
+          <div class="mini-value">178 户</div>
+          <div class="card-sub">目标 152 户</div>
+          <div class="mini-status ok">达标</div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-title">中区间</div>
+          <div class="mini-value">71 户</div>
+          <div class="card-sub">目标 51 户</div>
+          <div class="mini-status ok">达标</div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-title">小区间</div>
+          <div class="mini-value">61 户</div>
+          <div class="card-sub">目标 51 户</div>
+          <div class="mini-status ok">达标</div>
+        </div>
+        
+        <div class="mini-card">
+          <div class="mini-title">全市合计</div>
+          <div class="mini-value">310 户</div>
+          <div class="card-sub">目标 254 户</div>
+          <div class="mini-status ok">达标</div>
+        </div>
+        </div>
+      <h3>分公司样本户区间目标完成情况</h3>
+      <table>
+        <thead><tr><th>分公司</th><th>大区间</th><th>中区间</th><th>小区间</th><th>合计</th><th>完成情况</th><th>关注点</th></tr></thead>
+        <tbody><tr><td>思明分公司</td><td>39 / 36 已达标</td><td>12 / 12 已达标</td><td>11 / 12 差1户</td><td>62 / 60</td><td>需关注</td><td>小区间差1户</td></tr><tr><td>湖里分公司</td><td>33 / 27 已达标</td><td>11 / 9 已达标</td><td>13 / 9 已达标</td><td>57 / 45</td><td>已完成</td><td>—</td></tr><tr><td>集美分公司</td><td>53 / 54 差1户</td><td>22 / 18 已达标</td><td>19 / 18 已达标</td><td>94 / 90</td><td>需关注</td><td>大区间差1户</td></tr><tr><td>第一分公司</td><td>53 / 51 已达标</td><td>26 / 17 已达标</td><td>18 / 17 已达标</td><td>97 / 85</td><td>已完成</td><td>—</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>三、异常客户情况</h2>
+      <p class="summary">本期全市异常66条，异常条次率3.06%，较上期减少5条，异常条次率下降0.21个百分点。其中，A类异常38条，B类异常28条。A类异常为140天销购比异常，作为中长期观察事项；B类异常为非销购比类异常，作为下一阶段优先跟进事项。</p>
+      <h3>分公司异常环比情况</h3>
+      <table>
+        <thead><tr><th>分公司</th><th>本期异常</th><th>较上期</th><th>异常条次率</th><th>较上期</th><th>A类 / B类</th><th>关注判断</th></tr></thead>
+        <tbody><tr><td>思明分公司</td><td>13</td><td>持平</td><td>3.08%</td><td>下降0.01个百分点</td><td>2 / 11</td><td>基本持平</td></tr><tr><td>湖里分公司</td><td>32</td><td>增加4条</td><td>7.37%</td><td>上升1.12个百分点</td><td>27 / 5</td><td>优先跟进</td></tr><tr><td>集美分公司</td><td>12</td><td>减少6条</td><td>1.93%</td><td>下降0.97个百分点</td><td>5 / 7</td><td>有所下降</td></tr><tr><td>第一分公司</td><td>9</td><td>减少3条</td><td>1.33%</td><td>下降0.44个百分点</td><td>4 / 5</td><td>有所下降</td></tr></tbody>
+      </table>
+      <p class="summary">从分公司看，应重点关注异常条次率较高、B类异常较多或环比上升较明显的分公司。</p>
+      <div class="grid">
+        <div class="card">
+          <div class="card-label">A类异常（140天销购比）</div>
+          <div class="card-value">38</div>
+          <div class="card-sub">中长期观察类问题</div>
+        </div>
+        <div class="card">
+          <div class="card-label">B类异常（非销购比）</div>
+          <div class="card-value">28</div>
+          <div class="card-sub">下降1条</div>
+        </div>
+      </div>
+      <p class="summary">A类异常可继续作为中长期观察事项；B类异常建议作为下阶段优先跟进重点，推动问题客户形成闭环记录。</p>
+      <table>
+        <thead><tr><th>异常分类</th><th>条数</th></tr></thead>
+        <tbody><tr><td>A类异常（140天销购比）</td><td>38</td></tr><tr><td>B类异常（非销购比）</td><td>28</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>四、分公司情况</h2>
+      <p class="summary">从样本户结构看，思明分公司、集美分公司需关注单一区间缺口；湖里分公司、第一分公司样本户结构相对稳定。本期已在异常客户情况模块列示分公司异常环比情况，便于分公司对照整改。</p>
+      
+      <table>
+        <thead><tr><th>分公司</th><th>应上报总户次</th><th>异常条数</th><th>异常条次率</th><th>A类异常</th><th>B类异常</th><th>简要提示</th></tr></thead>
+        <tbody><tr><td>湖里分公司</td><td>434</td><td>32</td><td>7.37%</td><td>27</td><td>5</td><td>A类异常占比较高，建议结合客户经营状态持续观察。</td></tr><tr><td>思明分公司</td><td>422</td><td>13</td><td>3.08%</td><td>2</td><td>11</td><td>B类异常相对较多，建议优先核查并推动闭环。</td></tr><tr><td>集美分公司</td><td>621</td><td>12</td><td>1.93%</td><td>5</td><td>7</td><td>B类异常相对较多，建议优先核查并推动闭环。</td></tr><tr><td>第一分公司</td><td>679</td><td>9</td><td>1.33%</td><td>4</td><td>5</td><td>B类异常相对较多，建议优先核查并推动闭环。</td></tr></tbody>
+      </table>
+        
+    </section>
+
+    <section class="section">
+      <h2>五、重点关注事项</h2>
+      <p class="summary">1. 思明分公司小区间差1户，需关注小区间样本户稳定性。<br>2. 集美分公司大区间差1户，需关注大区间样本户补足情况。<br>3. B类非销购比异常28条，需作为近期优先跟进重点。</p>
+    </section>
+
+    <section class="section">
+      <h2>六、下阶段工作建议</h2>
+      <p class="summary">1. 保持全市样本户总体稳定，重点维护分公司区间结构。<br>2. 督促思明、集美针对关注区间做好样本户稳定维护和必要补充。<br>3. 优先跟进B类异常客户，推动异常问题形成闭环。</p>
+    </section>
+  </div>
+</body>
+</html>
